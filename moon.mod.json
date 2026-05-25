@@ -1,0 +1,14 @@
+{
+  "name": "gepheum/skir-client",
+  "version": "0.1.0",
+  "readme": "README.md",
+  "repository": "https://github.com/gepheum/skir",
+  "license": "MIT",
+  "keywords": [
+    "skir",
+    "client",
+    "serialization",
+    "moonbit"
+  ],
+  "description": "MoonBit client runtime library for Skir-generated APIs"
+}
