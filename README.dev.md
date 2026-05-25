@@ -45,3 +45,4 @@ The deploy workflow expects a secret named `MOONBIT_TOKEN`.
 
 Create this repository secret with a Mooncakes token that has publish permissions.
 The workflow will run on release creation or manually via workflow dispatch.
+
