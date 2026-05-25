@@ -31,7 +31,7 @@ moon package
 
 ## Release process
 
-1. Bump the version in `moon.mod.json`.
+1. Bump the version in `moon.mod`.
 2. Commit and push your changes.
 3. Publish the module:
 

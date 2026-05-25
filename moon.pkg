@@ -1,9 +1,9 @@
 import {
-  "moonbitlang/core/json" @json,
+  "moonbitlang/core/json",
   "moonbitlang/core/immut/vector" @immut_vector,
-  "moonbitlang/core/hashmap" @hashmap,
-  "moonbitlang/core/env" @env,
-  "moonbitlang/core/encoding/base64" @base64,
-  "moonbitlang/core/encoding/utf8" @utf8,
-  "moonbitlang/core/string" @string,
+  "moonbitlang/core/hashmap",
+  "moonbitlang/core/env",
+  "moonbitlang/core/encoding/base64",
+  "moonbitlang/core/encoding/utf8",
+  "moonbitlang/core/string",
 }
