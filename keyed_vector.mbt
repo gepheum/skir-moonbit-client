@@ -172,11 +172,13 @@ test "find_by_key_or_default_uses_spec_default_item" {
 }
 
 ///|
-pub impl[T : Eq, K] Eq for Internal_KeyedVector[T, K] with equal(self, other) {
+pub impl[T : Eq, K] Eq for Internal_KeyedVector[T, K] with fn equal(self, other) {
   self.vector == other.vector
 }
 
 ///|
-pub impl[T : Debug, K] Debug for Internal_KeyedVector[T, K] with to_repr(self) {
+pub impl[T : Debug, K] Debug for Internal_KeyedVector[T, K] with fn to_repr(
+  self,
+) {
   Debug::to_repr(self.vector)
 }

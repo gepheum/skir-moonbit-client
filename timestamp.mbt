@@ -105,22 +105,22 @@ pub fn Timestamp::to_iso8601(self : Timestamp) -> String {
 }
 
 ///|
-pub impl Eq for Timestamp with equal(self, other) {
+pub impl Eq for Timestamp with fn equal(self, other) {
   self.unix_millis == other.unix_millis
 }
 
 ///|
-pub impl Hash for Timestamp with hash_combine(self, hasher) {
+pub impl Hash for Timestamp with fn hash_combine(self, hasher) {
   self.unix_millis.hash_combine(hasher)
 }
 
 ///|
-pub impl Compare for Timestamp with compare(self, other) {
+pub impl Compare for Timestamp with fn compare(self, other) {
   self.unix_millis.compare(other.unix_millis)
 }
 
 ///|
-pub impl Debug for Timestamp with to_repr(self) {
+pub impl Debug for Timestamp with fn to_repr(self) {
   Debug::to_repr(self.unix_millis)
 }
 

@@ -103,21 +103,21 @@ fn Internal_UnrecognizedVariant::bytes(
 }
 
 ///|
-pub impl Eq for Internal_UnrecognizedFields with equal(self, other) {
+pub impl Eq for Internal_UnrecognizedFields with fn equal(self, other) {
   self.format == other.format && self.array_len == other.array_len
 }
 
 ///|
-pub impl Debug for Internal_UnrecognizedFields with to_repr(self) {
+pub impl Debug for Internal_UnrecognizedFields with fn to_repr(self) {
   Debug::to_repr(self.format)
 }
 
 ///|
-pub impl Eq for Internal_UnrecognizedVariant with equal(self, other) {
+pub impl Eq for Internal_UnrecognizedVariant with fn equal(self, other) {
   self.format == other.format && self.number == other.number
 }
 
 ///|
-pub impl Debug for Internal_UnrecognizedVariant with to_repr(self) {
+pub impl Debug for Internal_UnrecognizedVariant with fn to_repr(self) {
   Debug::to_repr(self.format)
 }
